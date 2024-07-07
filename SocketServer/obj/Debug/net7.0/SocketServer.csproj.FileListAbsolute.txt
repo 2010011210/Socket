@@ -1,0 +1,15 @@
+D:\GitHub\Socket\Socket\SocketServer\bin\Debug\net7.0\SocketServer.exe
+D:\GitHub\Socket\Socket\SocketServer\bin\Debug\net7.0\SocketServer.deps.json
+D:\GitHub\Socket\Socket\SocketServer\bin\Debug\net7.0\SocketServer.runtimeconfig.json
+D:\GitHub\Socket\Socket\SocketServer\bin\Debug\net7.0\SocketServer.dll
+D:\GitHub\Socket\Socket\SocketServer\bin\Debug\net7.0\SocketServer.pdb
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.csproj.AssemblyReference.cache
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.AssemblyInfoInputs.cache
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.AssemblyInfo.cs
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.csproj.CoreCompileInputs.cache
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.dll
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\refint\SocketServer.dll
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.pdb
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\SocketServer.genruntimeconfig.cache
+D:\GitHub\Socket\Socket\SocketServer\obj\Debug\net7.0\ref\SocketServer.dll

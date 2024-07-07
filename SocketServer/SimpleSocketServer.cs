@@ -1,13 +1,21 @@
-# Socket
-Socket  
-1.服务短要先启动，监听建立的链接  
-``` 
-public static void Process() 
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SocketServer
+{
+    public class SimpleSocketServer
+    {
+        public static void Process() 
         {
             // 1.确定ip地址和端口
             int port = 2024;
             string host = "127.0.0.1";
-            IPEndPoint iPEnd = GetIPEndPoint(host, port);  
+            IPEndPoint iPEnd = GetIPEndPoint(host, port);  // 1.确定ip地址和端口
 
             // 2.
             Socket sSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -48,37 +56,5 @@ public static void Process()
             IPEndPoint iPEnd = new IPEndPoint(ip, port);  // 1.确定ip地址和端口
             return iPEnd;
         }
- ```
-2.客户端启动，链接服务端   
-
-```
-// 1.确定ip地址和端口
-int port = 2024;
-string host = "127.0.0.1";
-IPEndPoint iPEnd = GetIPEndPoint(host, port);  // 1.确定ip地址和端口
-Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-clientSocket.Connect(iPEnd);
-while (true)
-{
-    Console.WriteLine("请输入要发送到服务端的内容：");
-    string sendStr = Console.ReadLine();
-    sendStr = $"Client:{sendStr}";
-    if ("exist".Equals(sendStr))
-    {
-        Console.WriteLine("客户端退出");
-        break;
     }
-    byte[] sendBytes = Encoding.UTF8.GetBytes(sendStr);
-    clientSocket.Send(sendBytes);
-
-    string recStr = "";
-    byte[] recBytes = new byte[4096];
-    int bytes = clientSocket.Receive(recBytes, recBytes.Length, 0);
-    recStr = Encoding.UTF8.GetString(recBytes, 0, bytes);
-
-    Console.WriteLine($"服务器返回：{recStr}");
 }
-
-clientSocket.Close();
-```
-
